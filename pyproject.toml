@@ -1,0 +1,38 @@
+[project]
+name = "ESIPP"
+version = "0.1.0"
+description = "Enterprise Stock Intelligence & Prediction Platform"
+authors = [
+    {name = "Krishna Manchikalapudi", email = "krishna@DayOne.dev"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+homepage = "https://DayOne.dev"
+repository = "https://github.com/krishnamanchikalapudi/StockPrice.ml"
+[project.optional-dependencies]
+cpu = [
+    "torch (==2.3.1+cpu)",
+]
+cuda = [
+    "torch (==2.3.1+cu118)",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+dependencies = [
+    "ipython-autotime",
+    "certifi",
+    "urllib3",
+    "requests",
+    "yfinance",
+    "finvizfinance",
+    "pylint",
+    "jaydebeapi",
+    "SQLAlchemy",
+    "psycopg"
+]
+
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]

@@ -1,0 +1,11 @@
+poetry
+ipython-autotime
+certifi
+urllib3
+requests
+yfinance
+finvizfinance
+pylint
+SQLAlchemy
+psycopg
+jaydebeapi

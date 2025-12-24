@@ -1,4 +1,4 @@
-# Enterprise Stock Intelligence & Prediction Platform (ESIPP)
+# ESIPP = Enterprise Stock Intelligence & Prediction Platform
 
 ## Executive Brief
 ### Executive Summary (Think Big)
@@ -142,9 +142,56 @@ The platform enables leadership to Think Big, Dive Deep, and Deliver Results by 
 ---------------------- 
 
 
+## System install
+### Pre Setup
+#### Activating the environment
+```
+eval $(poetry env activate)
+```
 
-## Sagemaker - studiolab
-- https://studiolab.sagemaker.aws
-- [![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/krishnamanchikalapudi/stockprice.ml)
+### Environment Info
+```
+poetry env info
+```
+
+#### Listing the environments
+```
+poetry env list --full-path
+```
+
+#### Deleting the environments
+```
+poetry env remove --all
+```
+
+### build
+#### Check
+```
+poetry check
+```
+
+#### Compile
+```
+python3 -m compileall .
+```
+
+#### Install dependencies
+```
+poetry install --no-dev
+```
+```
+pip3 install -r requirements.txt
+```
+
+#### Test: Unit
+```
+python3 -m unittest tests/common/PostgreSqllDbConnectionTests.py
+```
+
+#### Test: Cron jobs
+```
+python3 tests/cron/SecCompanyTickers.py
+```
+
 
 
